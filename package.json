@@ -4,16 +4,30 @@
   "description": "API for visualization and classification of beaches for surfing",
   "main": "index.js",
   "scripts": {
+    "husky:prepare": "husky install",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "dev": "tsx watch src/index.ts",
     "build": "tsup src",
     "start": "node dist/index.js"
   },
   "author": "Jeovane Araujo <jeovanearaujo16@gmail.com>",
   "license": "MIT",
-  "keywords": ["nodejs", "typescript", "api"],
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
     "tsup": "^6.5.0",
     "tsx": "^3.12.2",
     "typescript": "^4.9.5"
