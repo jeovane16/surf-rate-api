@@ -1,0 +1,8 @@
+{
+  "name": "surf-rate-api",
+  "version": "1.0.0",
+  "description": "API for visualization and classification of beaches for surfing",
+  "main": "index.js",
+  "author": "Jeovane Araujo <jeovanearaujo16@gmail.com>",
+  "license": "MIT"
+}
