@@ -9,7 +9,8 @@
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "dev": "tsx watch src/index.ts",
     "build": "tsup src",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test:functional": "vitest ./test/functional"
   },
   "author": "Jeovane Araujo <jeovanearaujo16@gmail.com>",
   "license": "MIT",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
@@ -28,9 +30,11 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
+    "supertest": "^6.3.3",
     "tsup": "^6.5.0",
     "tsx": "^3.12.2",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.3"
   },
   "dependencies": {
     "module-alias": "^2.2.2"
