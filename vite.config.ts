@@ -1,12 +1,11 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 
-const files = path.resolve(__dirname, '../');
+const files = path.resolve(__dirname, '/');
 
 export default defineConfig({
   test: {
-    setupFiles: ['./test/vite-setup.ts'],
-    name: 'e2e-test',
+    name: 'root-test',
   },
   resolve: {
     alias: {
